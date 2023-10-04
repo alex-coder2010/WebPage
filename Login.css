@@ -1,0 +1,109 @@
+body {
+  background-image: url('/Images/hunin.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login_box {
+  text-align: center;
+  border: 3px solid white;
+  border-radius: 20px;
+  padding: 20px;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#login_title {
+  font-family: Roboto;
+  font-weight: bold;
+  color: white; 
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+.input_container {
+  margin-bottom: 20px;
+  position: relative; 
+}
+
+#username, #password {
+  width: 372px;
+  height: 30px;
+  border: none;
+  border-bottom: 3px solid white; 
+  background-color: transparent; 
+  color: white; 
+  font-size: 18px; 
+  outline: none; 
+  margin: 20px;
+}
+
+#togglePassword {
+  position: absolute;
+  right: 10px; 
+  top: 30%; 
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+#submit_button {
+  width: 100px;
+  height: 50px;
+  font-family: Roboto;
+  background-color: transparent;
+  color: white;
+  border: 3px solid white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+
+}
+
+#submit_button:hover{
+  background-color: white;
+  color: #464242;
+  transform: scale(1.1);
+}
+
+.fa-eye {
+  color: white;
+}
+
+.fa-eye:hover {
+  color: grey;
+}
+
+input:focus {
+  outline: none;
+}
+
+#forgot_password{
+  font-size : 18px;
+  font-family: Roboto;
+  color : white;
+  left : 10px
+
+}
+
+#no_account{
+  font-size : 18px;
+  font-family: Roboto;
+  color : white;
+  right : 10px
+}
+
+#username::placeholder,
+#password::placeholder{
+  color: white;
+  opacity: 0.3;
+}
+
+#forgot_password:hover{
+  transform: scale(1.1);
+}
